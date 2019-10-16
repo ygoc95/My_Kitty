@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ItemsList">
+
+
+    <ImageButton
+        android:id="@+id/image_box"
+        android:layout_width="144dp"
+        android:layout_height="149dp"
+
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/box"
+        app:layout_constraintEnd_toStartOf="@+id/image_glasses"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCategories"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/image_glasses"
+        android:layout_width="134dp"
+        android:layout_height="139dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/glassses"
+        app:layout_constraintBottom_toTopOf="@+id/image_clothes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_box"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/image_space"
+        android:layout_width="147dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/space"
+        app:layout_constraintEnd_toStartOf="@+id/image_clothes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_box"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/image_hats"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="37dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/hats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_space"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textCategories"
+        android:layout_width="283dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="32dp"
+        android:text="SELECT YOUR DESTINY"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/image_clothes"
+        android:layout_width="135dp"
+        android:layout_height="143dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="37dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/clothes"
+        app:layout_constraintBottom_toTopOf="@+id/image_hats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_space"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>
