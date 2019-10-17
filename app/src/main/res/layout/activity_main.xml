@@ -10,12 +10,22 @@
 
     >
 
+    <TextView
+        android:id="@+id/urlholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        tools:visibility="invisible" />
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
@@ -24,8 +34,8 @@
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <ImageView
@@ -35,12 +45,19 @@
                 android:layout_marginTop="16dp"
                 tools:srcCompat="@tools:sample/avatars" />
 
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="Save Image" />
+
             <TextView
                 android:id="@+id/catDescription"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/cat_poem"
-                android:textSize="24sp" />
+                android:textSize="22sp" />
         </LinearLayout>
     </ScrollView>
 

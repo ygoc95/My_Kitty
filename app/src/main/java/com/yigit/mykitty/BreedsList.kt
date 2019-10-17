@@ -1,8 +1,8 @@
 package com.yigit.mykitty
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_breeds_list.*
 
 class BreedsList : AppCompatActivity() {
@@ -14,13 +14,13 @@ class BreedsList : AppCompatActivity() {
 
 
         val jsontoview:JsontoView=JsontoView()
-        jsontoview.fetchJson(this,urlmaker("bsho"),findViewById(R.id.bosho),findViewById(R.id.boshotxt),false)
-        jsontoview.fetchJson(this,urlmaker("sphy"),findViewById(R.id.sphy),findViewById(R.id.boshotxt),false)
-        jsontoview.fetchJson(this,urlmaker("tvan"),findViewById(R.id.tvan),findViewById(R.id.boshotxt),false)
-       jsontoview.fetchJson(this,urlmaker("siam"),findViewById(R.id.siam),findViewById(R.id.boshotxt),false)
-       jsontoview.fetchJson(this,urlmaker("pers"),findViewById(R.id.pers),findViewById(R.id.boshotxt),false)
-       jsontoview.fetchJson(this,urlmaker("ragd"),findViewById(R.id.ragd),findViewById(R.id.boshotxt),false)
-        jsontoview.fetchJson(this,urlmaker("mcoo"),findViewById(R.id.mcoo),findViewById(R.id.boshotxt),false)
+        jsontoview.fetchJson(this,urlmaker("bsho"),findViewById(R.id.bosho),findViewById(R.id.boshotxt),false,urlholderBreeds)
+        jsontoview.fetchJson(this,urlmaker("sphy"),findViewById(R.id.sphy),findViewById(R.id.boshotxt),false,urlholderBreeds)
+        jsontoview.fetchJson(this,urlmaker("tvan"),findViewById(R.id.tvan),findViewById(R.id.boshotxt),false,urlholderBreeds)
+       jsontoview.fetchJson(this,urlmaker("siam"),findViewById(R.id.siam),findViewById(R.id.boshotxt),false,urlholderBreeds)
+       jsontoview.fetchJson(this,urlmaker("pers"),findViewById(R.id.pers),findViewById(R.id.boshotxt),false,urlholderBreeds)
+       jsontoview.fetchJson(this,urlmaker("ragd"),findViewById(R.id.ragd),findViewById(R.id.boshotxt),false,urlholderBreeds)
+        jsontoview.fetchJson(this,urlmaker("mcoo"),findViewById(R.id.mcoo),findViewById(R.id.boshotxt),false,urlholderBreeds)
 
 
         bosho.setOnClickListener({ActivtyMaker("bsho")})
