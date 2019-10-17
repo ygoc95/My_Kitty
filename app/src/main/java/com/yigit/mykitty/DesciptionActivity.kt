@@ -77,7 +77,7 @@ class DesciptionActivity : AppCompatActivity() {
         Manifest.permission.READ_EXTERNAL_STORAGE,
         Manifest.permission.WRITE_EXTERNAL_STORAGE
     ) {
-        Toast.makeText(this,"Storage permissions granted",Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,"Started downloading",Toast.LENGTH_SHORT).show()
             val file1 = File(Environment.getExternalStorageDirectory(), "cat.jpg")
             println(Environment.getExternalStorageDirectory().toString())
             Pump.newRequest(string, file1.absolutePath)
@@ -90,6 +90,8 @@ class DesciptionActivity : AppCompatActivity() {
                 .tag("tagCat")
                 .submit()
             println("Download Finished")
+            Toast.makeText(this,"Saved as 'cat.jpg' in your external storage",Toast.LENGTH_SHORT).show()
+
 
             //while (!Pump.hasDownloadSucceed("tagCat")==true){}
             Pump.deleteByTag("tagCat")
