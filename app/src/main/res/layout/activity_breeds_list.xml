@@ -30,7 +30,7 @@
         <TableLayout
             android:id="@+id/table"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp">
@@ -40,7 +40,7 @@
                 android:layout_height="match_parent">
 
                 <ImageButton
-                    android:id="@+id/bosho"
+                    android:id="@+id/tonk"
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:adjustViewBounds="true"
@@ -48,12 +48,143 @@
                     tools:srcCompat="@tools:sample/avatars" />
 
                 <TextView
-                    android:id="@+id/boshotxt"
+                    android:id="@+id/tonktext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Tonkinese"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/hima"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/himatext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Himalayan"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/asho"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/ashotext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="American Short Hair"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/chara"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/chartext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Chartreux"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/buri"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/buritext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Burmilla"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/bsho"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/bshotext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="British Short Hair"
+                    android:textSize="20dp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/nebe"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/nebetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Nebelung"
                     android:textSize="20dp" />
             </TableRow>
 

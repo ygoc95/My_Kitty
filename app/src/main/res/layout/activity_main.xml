@@ -26,6 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:filterTouchesWhenObscured="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
@@ -35,7 +36,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ImageView
@@ -55,7 +56,7 @@
             <TextView
                 android:id="@+id/catDescription"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="266dp"
                 android:text="@string/cat_poem"
                 android:textSize="22sp" />
         </LinearLayout>

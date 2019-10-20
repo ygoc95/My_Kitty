@@ -26,14 +26,14 @@ class DesciptionActivity : AppCompatActivity() {
             .setMaxRunningTaskNum(1)
             .build();
 
-        if (intent.getStringExtra("breed_id").isNullOrEmpty() !== true) {
+        if (intent.getStringExtra("breed_id").isNullOrEmpty() !== true) { // intent will have this extra if it's coming from breed activity
             val ss: String = intent.getStringExtra("breed_id")
             jsonurl=breedurlmaker(ss)
          jsontoview.fetchJson(this, jsonurl, cat_image, catDescription, true,urlholder)
             //imageurlpath=jsontoview.imgurl
 
 
-        } else if (intent.getStringExtra("category_id").isNullOrEmpty() !== true) {
+        } else if (intent.getStringExtra("category_id").isNullOrEmpty() !== true) {  // intent will have this extra if it's coming category activity
 
             val ss: String = intent.getStringExtra("category_id")
             jsonurl=categurlmaker(ss)
@@ -43,7 +43,6 @@ class DesciptionActivity : AppCompatActivity() {
 
         } else {
             jsontoview.fetchJson(this,jsonurl,cat_image,catDescription,false,urlholder)
-           // imageurlpath=jsontoview.imgurl
 
 
         }
@@ -53,7 +52,7 @@ class DesciptionActivity : AppCompatActivity() {
 
 
     }
-        fun breedurlmaker(id: String): String {
+        fun breedurlmaker(id: String): String {  //url function for breed search
 
 
             val str =
@@ -64,7 +63,7 @@ class DesciptionActivity : AppCompatActivity() {
 
         }
 
-        fun categurlmaker(id: String): String {
+        fun categurlmaker(id: String): String { //url function for category search
 
             val str =
                 "https://api.thecatapi.com/v1/images/search?category_ids=" + id + "&api_key=92e453f8-d396-4777-bb4a-9f612e2dfa1d"
@@ -81,19 +80,14 @@ class DesciptionActivity : AppCompatActivity() {
             val file1 = File(Environment.getExternalStorageDirectory(), "cat.jpg")
             println(Environment.getExternalStorageDirectory().toString())
             Pump.newRequest(string, file1.absolutePath)
-                //Optionally,Set whether to repeatedly download the downloaded file,default false.
                 .forceReDownload(false)
-                //Optionally,Set how many threads are used when downloading,default 3.
                 .threadNum(3)
-                //Tag download task, can use {@link Pump#getDownloadListByTag(String)} to get download list
-                //filter by tag,and use {@link DownloadInfo#getTag()} to get tag.
                 .tag("tagCat")
                 .submit()
             println("Download Finished")
             Toast.makeText(this,"Saved as 'cat.jpg' in your external storage",Toast.LENGTH_SHORT).show()
 
 
-            //while (!Pump.hasDownloadSucceed("tagCat")==true){}
             Pump.deleteByTag("tagCat")
 
             }

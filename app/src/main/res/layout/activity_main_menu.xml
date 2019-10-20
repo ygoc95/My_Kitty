@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="900dp"
+    android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     tools:context=".MainMenu">
 
@@ -20,10 +20,10 @@
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
@@ -53,9 +53,10 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="32dp"
+                android:gravity="center"
                 android:saveEnabled="false"
-                android:text="WELCOME TO MY KITTY"
-                android:textSize="30sp" />
+                android:text="WELCOME TO MY DAILY CAT"
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/welcome_text2"
@@ -64,6 +65,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="32dp"
+                android:gravity="center"
                 android:saveEnabled="false"
                 android:text="We just have cats, nothing else."
                 android:textSize="24sp" />
@@ -72,19 +74,32 @@
                 android:id="@+id/buttonBreeds"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorPrimaryDark"
                 android:text="Breeds" />
 
             <Button
                 android:id="@+id/buttonCategories"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorPrimaryDark"
                 android:text="CategorIes" />
 
             <Button
                 android:id="@+id/buttonRandom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
                 android:text="Random CAT!" />
+
+            <TextView
+                android:id="@+id/credits"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:gravity="bottom|center"
+                android:text="Powered by The Dog API"
+                android:textSize="10sp" />
 
         </LinearLayout>
     </ScrollView>
