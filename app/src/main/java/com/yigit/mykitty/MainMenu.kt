@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_main_menu.*
 
 class MainMenu : AppCompatActivity() {
@@ -17,6 +18,7 @@ class MainMenu : AppCompatActivity() {
         val imgv = findViewById<ImageView>(R.id.random_cat_image)
         val jsontoview:JsontoView=JsontoView()
        val urlh:String="https://api.thecatapi.com/v1/images/search?api_key=92e453f8-d396-4777-bb4a-9f612e2dfa1d"
+        Glide.with(this).load(R.drawable.loading).into(random_cat_image)
         jsontoview.fetchJson(this,urlh,imgv,findViewById(R.id.welcome_text),false,urlholderMain)
 
         buttonBreeds.setOnClickListener ({

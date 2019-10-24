@@ -3,6 +3,7 @@ package com.yigit.mykitty
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_breeds_list.*
 
 class BreedsList : AppCompatActivity() {
@@ -10,6 +11,23 @@ class BreedsList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_breeds_list)
+
+        Glide.with(this).load(R.drawable.loading).into(bsho)
+        Glide.with(this).load(R.drawable.loading).into(sphy)
+        Glide.with(this).load(R.drawable.loading).into(tvan)
+        Glide.with(this).load(R.drawable.loading).into(pers)
+        Glide.with(this).load(R.drawable.loading).into(ragd)
+        Glide.with(this).load(R.drawable.loading).into(mcoo)
+        Glide.with(this).load(R.drawable.loading).into(tonk)
+        Glide.with(this).load(R.drawable.loading).into(hima)
+        Glide.with(this).load(R.drawable.loading).into(asho)
+        Glide.with(this).load(R.drawable.loading).into(siam)
+        Glide.with(this).load(R.drawable.loading).into(chara)
+        Glide.with(this).load(R.drawable.loading).into(buri)
+        Glide.with(this).load(R.drawable.loading).into(nebe)
+
+
+
 
 
 

@@ -41,16 +41,17 @@
 
                 <ImageButton
                     android:id="@+id/tonk"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:adjustViewBounds="true"
+                    android:background="@color/colorPrimary"
                     android:scaleType="fitCenter"
                     tools:srcCompat="@tools:sample/avatars" />
 
                 <TextView
                     android:id="@+id/tonktext"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="Tonkinese"
@@ -63,16 +64,17 @@
 
                 <ImageButton
                     android:id="@+id/hima"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:adjustViewBounds="true"
+                    android:background="@color/colorPrimary"
                     android:scaleType="fitCenter"
                     tools:srcCompat="@tools:sample/avatars" />
 
                 <TextView
                     android:id="@+id/himatext"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="109dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="Himalayan"
@@ -85,18 +87,20 @@
 
                 <ImageButton
                     android:id="@+id/asho"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:adjustViewBounds="true"
+                    android:background="@color/colorPrimary"
                     android:scaleType="fitCenter"
                     tools:srcCompat="@tools:sample/avatars" />
 
                 <TextView
                     android:id="@+id/ashotext"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:gravity="center"
+                    android:lines="2"
                     android:text="American Short Hair"
                     android:textSize="20dp" />
             </TableRow>
@@ -107,9 +111,10 @@
 
                 <ImageButton
                     android:id="@+id/chara"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:adjustViewBounds="true"
+                    android:background="@color/colorPrimary"
                     android:scaleType="fitCenter"
                     tools:srcCompat="@tools:sample/avatars" />
 
@@ -129,9 +134,10 @@
 
                 <ImageButton
                     android:id="@+id/buri"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:adjustViewBounds="true"
+                    android:background="@color/colorPrimary"
                     android:scaleType="fitCenter"
                     tools:srcCompat="@tools:sample/avatars" />
 
@@ -151,9 +157,10 @@
 
                 <ImageButton
                     android:id="@+id/bsho"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:adjustViewBounds="true"
+                    android:background="@color/colorPrimary"
                     android:scaleType="fitCenter"
                     tools:srcCompat="@tools:sample/avatars" />
 
@@ -172,9 +179,10 @@
 
                 <ImageButton
                     android:id="@+id/nebe"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:adjustViewBounds="true"
+                    android:background="@color/colorPrimary"
                     android:scaleType="fitCenter"
                     tools:srcCompat="@tools:sample/avatars" />
 
@@ -194,8 +202,9 @@
 
                 <ImageButton
                     android:id="@+id/sphy"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimary"
                     tools:srcCompat="@tools:sample/avatars" />
 
                 <TextView
@@ -214,8 +223,9 @@
 
                 <ImageButton
                     android:id="@+id/tvan"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimary"
                     tools:srcCompat="@tools:sample/avatars" />
 
                 <TextView
@@ -234,8 +244,9 @@
 
                 <ImageButton
                     android:id="@+id/siam"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimary"
                     tools:srcCompat="@tools:sample/avatars" />
 
                 <TextView
@@ -254,8 +265,9 @@
 
                 <ImageButton
                     android:id="@+id/pers"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimary"
                     tools:srcCompat="@tools:sample/avatars" />
 
                 <TextView
@@ -274,8 +286,10 @@
 
                 <ImageButton
                     android:id="@+id/mcoo"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimary"
+
                     tools:srcCompat="@tools:sample/avatars" />
 
                 <TextView
@@ -295,8 +309,9 @@
 
                 <ImageButton
                     android:id="@+id/ragd"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimary"
                     tools:srcCompat="@tools:sample/avatars" />
 
                 <TextView
