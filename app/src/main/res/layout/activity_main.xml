@@ -74,6 +74,15 @@
 
             <TableRow
                 android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
                 android:layout_height="26dp">
 
                 <Space

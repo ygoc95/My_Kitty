@@ -17,7 +17,7 @@ class MainMenu : AppCompatActivity() {
         val i:Intent=Intent()
         val imgv = findViewById<ImageView>(R.id.random_cat_image)
         val jsontoview:JsontoView=JsontoView()
-       val urlh:String="https://api.thecatapi.com/v1/images/search?api_key=92e453f8-d396-4777-bb4a-9f612e2dfa1d"
+       val urlh:String="https://api.thecatapi.com/v1/images/search?api_key=YOUR KEY HERE"
         Glide.with(this).load(R.drawable.loading).into(random_cat_image)
         jsontoview.fetchJson(this,urlh,imgv,findViewById(R.id.welcome_text),false,urlholderMain)
 

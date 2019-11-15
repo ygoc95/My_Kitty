@@ -82,8 +82,8 @@ class BreedsList : AppCompatActivity() {
 
     fun urlmaker( id:String): String {
 
-
-       val str="https://api.thecatapi.com/v1/images/search?breed_id="+id+"&api_key=92e453f8-d396-4777-bb4a-9f612e2dfa1d"
+//enter your key here
+       val str="https://api.thecatapi.com/v1/images/search?breed_id="+id+"&api_key="
 
 
         return str

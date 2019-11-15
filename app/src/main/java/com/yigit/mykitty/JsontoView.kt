@@ -17,9 +17,6 @@ class JsontoView {
     fun fetchJson(activity: Activity,weburl:String, imgv: ImageView, txtvw: TextView,setText:Boolean,urltxt:TextView) //This function takes url, an imageview for image and textview for description
 
     {
-       // val urlh="https://api.thecatapi.com/v1/images/search?breed_id=beng&api_key=92e453f8-d396-4777-bb4a-9f612e2dfa1d"
-
-        //val urlh="https://api.thecatapi.com/v1/images/search?api_key=92e453f8-d396-4777-bb4a-9f612e2dfa1d"
 
         val client = OkHttpClient()
         val request = Request.Builder().url(weburl).build()

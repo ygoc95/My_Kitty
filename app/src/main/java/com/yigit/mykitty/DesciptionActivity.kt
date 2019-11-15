@@ -25,7 +25,7 @@ class DesciptionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val jsontoview: JsontoView = JsontoView()
-        var jsonurl:String="https://api.thecatapi.com/v1/images/search?api_key=92e453f8-d396-4777-bb4a-9f612e2dfa1d"
+        var jsonurl:String="https://api.thecatapi.com/v1/images/search?api_key="
         //val imageurlpath:String
         Glide.with(this).load(R.drawable.loading).into(cat_image)
 
@@ -61,10 +61,10 @@ class DesciptionActivity : AppCompatActivity() {
             val saveDialogBuilder: AlertDialog.Builder = AlertDialog.Builder(this)
             saveDialogBuilder.setView(savedialog)
             saveDialogBuilder.setCancelable(true)
-            saveDialogBuilder.setPositiveButton("YES"){_, _ ->
+            saveDialogBuilder.setPositiveButton("SAVE"){_, _ ->
 
                 var imagefilename:String = savedialog.editTextDialogUserInput.text.toString()
-                Toast.makeText(this,"You said: " +imagefilename,Toast.LENGTH_LONG).show()
+                //Toast.makeText(this,"You said: " +imagefilename,Toast.LENGTH_LONG).show()
 
                 methodWithPermissions(urlholder.text.toString(),imagefilename)
 
@@ -85,7 +85,7 @@ class DesciptionActivity : AppCompatActivity() {
 
 
             val str =
-                "https://api.thecatapi.com/v1/images/search?breed_id=" + id + "&api_key=92e453f8-d396-4777-bb4a-9f612e2dfa1d"
+                "https://api.thecatapi.com/v1/images/search?breed_id=" + id + "&api_key=KEY HERE"
 
 
             return str
@@ -95,7 +95,7 @@ class DesciptionActivity : AppCompatActivity() {
         fun categurlmaker(id: String): String { //url function for category search
 
             val str =
-                "https://api.thecatapi.com/v1/images/search?category_ids=" + id + "&api_key=92e453f8-d396-4777-bb4a-9f612e2dfa1d"
+                "https://api.thecatapi.com/v1/images/search?category_ids=" + id + "&api_key="
 
             return str
         }
